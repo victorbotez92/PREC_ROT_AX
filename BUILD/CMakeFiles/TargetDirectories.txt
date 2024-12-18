@@ -1,0 +1,10 @@
+/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/debug.dir
+/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/release.dir
+/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/native.dir
+/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/a.exe.dir
+/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/edit_cache.dir
+/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/rebuild_cache.dir
+/home/botez18/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_C.dir
+/home/botez18/SFEMaNS/LIBS/CMakeFiles/sfemans_lib_F.dir
+/home/botez18/SFEMaNS/LIBS/CMakeFiles/edit_cache.dir
+/home/botez18/SFEMaNS/LIBS/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,227 @@
+===Is mesh file formatted (true/false)?
+.f.
+===Directory and name of mesh file
+'/lustre/fswork/projects/rech/nor/rnor522/MESHES/MESHES_PRECESSION' 'MHD_RECT100_40_H_2R_1_SYM_unform.FEM'
+!==========================================================================
+!          Mesh symmetry
+!==========================================================================
+===Is the mesh symmetric (true/false)?
+.t.
+===Number of processors in meridian section
+1
+===Number of processors in Fourier space
+40
+===Number of Fourier modes
+40
+===Select Fourier modes? (true/false)
+.f.
+===List of Fourier modes (if select_mode=.TRUE.)
+0
+===Problem type: (nst, mxw, mhd, fhd)
+'nst'
+===Solve Navier-Stokes with u (true) or m (false)?
+.t.
+===Restart on magnetic field (true/false)
+.f.
+===Restart on velocity (true/false)
+.t.	   
+===Do we read metis partition? (true/false)
+.t.
+===Restart on LES (true/false)
+.f.
+===Time step and number of time iterations
+0.0025d0 500
+0.00125d0 5024 ! 5024_it = 1 turn  since  6.28 = time_one_turn (omega=1.0) 
+
+!=============================================================================
+!          Data for post processing
+!=============================================================================
+!===Number of planes in real space for Visualization
+!127
+===Frequency to write energies
+10
+50
+===Should I do post proc init? (true/false)
+.f.
+===Frequency to create plots
+500
+100000
+===Create 2D plots (true/false)
+.f.
+===Frequency to write restart file
+500
+157   !save 32 restarts every turn
+628   !save 8 restarts every turn
+===Frequency to write time avg restart file
+500   !save 4 restarts every  turn
+===Just postprocessing without computing? (true/false)
+.f.
+===Read time average info? (true/false)
+.t.
+
+============================================
+              Mesh-NAVIER-STOKES
+============================================
+===Number of subdomains in Navier-Stokes mesh
+1
+===List of subdomains for Navier-Stokes mesh
+1
+
+============================================
+              Dynamics-NAVIER-STOKES
+============================================
+===Reynolds number
+500.d0
+===Coefficient for penalty of divergence in NS?
+1.d0
+===Is there a precession term (true/false)?
+.t.
+===Precession rate
+0.1d0
+===Precession angle over pi
+0.5d0
+
+============================================
+              BCs-NAVIER-STOKES
+============================================
+===How many boundary pieces for full Dirichlet BCs on velocity?
+2
+===List of boundary pieces for full Dirichlet BCs on velocity
+2 3
+===How many boundary pieces for Dirichlet BCs on pressure?
+0
+===List of boundary pieces for Dirichlet BCs on pressure
+0
+
+============================================
+              Anemometers for v
+============================================
+===Anemometers (v) ? (true/false)
+.t.
+===Number of anemo_v (r,z)
+3 5
+===List of r anemo_v
+0.25d0 0.5d0 0.90d0
+===List of z anemo_v
+-0.65d0 -0.35d0 0.d0 0.35d0 0.65d0
+
+============================================
+              Solver-velocity-NAVIER-STOKES
+============================================
+===Maximum number of iterations for velocity solver
+100
+===Relative tolerance for velocity solver
+1.d-6
+===Absolute tolerance for velocity solver
+1.d-10
+===Velocity solver verbose? (true/false)
+.f.
+===Solver type for velocity (FGMRES, CG, ...)
+GMRES
+===Preconditionner type for velocity solver (HYPRE, JACOBI, MUMPS...)
+MUMPS
+
+============================================
+              Solver-pressure-NAVIER-STOKES
+============================================
+===Maximum number of iterations for pressure solver
+100
+===Relative tolerance for pressure solver
+1.d-6
+===Absolute tolerance for pressure solver
+1.d-10
+===Pressure solver verbose? (true/false)
+.f.
+===Solver type for pressure (FGMRES, CG, ...)
+GMRES
+===Preconditionner type for pressure solver (HYPRE, JACOBI, MUMPS...)
+MUMPS
+
+============================================
+              Solver-mass-NAVIER-STOKES
+============================================
+===Maximum number of iterations for mass matrix solver
+100
+===Relative tolerance for mass matrix solver
+1.d-6
+===Absolute tolerance for mass matrix solver
+1.d-10
+===Mass matrix solver verbose? (true/false)
+.f.
+===Solver type for mass matrix (FGMRES, CG, ...)
+CG
+===Preconditionner type for mass matrix solver (HYPRE, JACOBI, MUMPS...)
+MUMPS
+
+============================================
+              Verbose (diagnostics)
+============================================
+===Verbose timing? (true/false)
+.t.
+===Verbose divergence? (true/false)
+.t.
+===Verbose CFL? (true/false)
+.t.
+===Check numerical stability (true/false)
+.t.
+
+============================================
+              H-MAXWELL
+============================================
+===Solve Maxwell with H (true) or B (false)?
+.f.
+===Number of subdomains in magnetic field (H) mesh
+1
+===List of subdomains for magnetic field (H) mesh
+1
+===Number of interfaces in H mesh
+0
+===List of interfaces in H mesh
+10
+===Number of Dirichlet sides for Hxn
+2
+===List of Dirichlet sides for Hxn
+2 3
+===Conductivity in the conductive part (1:nb_dom_H)
+1.d0
+===Type of finite element for magnetic field
+2
+===Magnetic Reynolds number
+150.d0
+===Stabilization coefficient (divergence)
+1.d0
+===Stabilization coefficient for Dirichlet H and/or interface H/H
+1.d0
+
+============================================
+              Disk-specifications
+============================================
+!===Disk Permeability
+!5.d1
+===Disk Geometry: disk_radius, omega_Vol
+1.d0 6.28318530717958647692d0   ! PREC_ROT
+
+0.75d0 6.28318530717958647692d0   ! TM73
+
+0.925d0 7.79114978090268723138d0  ! TM87
+============================================
+              Phi-MAXWELL
+============================================
+===Number of subdomains in magnetic potential (phi) mesh
+0
+============================================
+Solver-MAXWELL
+============================================
+===Maximum number of iterations for Maxwell solver
+100
+===Relative tolerance for Maxwell solver
+1.d-6 
+===Absolute tolerance for Maxwell solver
+1.d-10
+===Maxwell solver verbose? (true/false)
+.f.
+===Solver type for Maxwell (FGMRES, CG, ...)
+GMRES
+===Preconditionner type for Maxwell solver (HYPRE, JACOBI, MUMPS...)
+MUMPS
+

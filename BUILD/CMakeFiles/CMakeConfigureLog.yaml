@@ -1,0 +1,1222 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1160.25.1.el7.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/3.26.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/3.26.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:11 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d10a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3d10a.dir/build.make CMakeFiles/cmTC_3d10a.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a'
+        Building C object CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc   -v -o CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o -c /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d10a.dir/'
+         /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/cc1 -quiet -v /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3d10a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cco8ZL0f.s
+        GNU C17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+        ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/trinity/shared/pkg/devel/metis/5.1.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/analysis/petsc/3.22.2/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include
+         /trinity/shared/pkg/devel/metis/5.1.0/include
+         /trinity/shared/pkg/analysis/petsc/3.22.2/include
+         /trinity/shared/pkg/devel/valgrind/3.14.0/include
+         /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include
+         /trinity/shared/pkg/devel/zlib/1.2.11/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include
+         /usr/local/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        Compiler executable checksum: 9922a690e13d8344b0eb5552ba48d45d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d10a.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o /tmp/cco8ZL0f.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+        COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_3d10a
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d10a.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -v CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o -o cmTC_3d10a 
+        Using built-in specs.
+        COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (GCC) 
+        COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d10a' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3d10a.'
+         /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXxp6pl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3d10a /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d10a' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3d10a.'
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+          add: [/trinity/shared/pkg/devel/metis/5.1.0/include]
+          add: [/trinity/shared/pkg/analysis/petsc/3.22.2/include]
+          add: [/trinity/shared/pkg/devel/valgrind/3.14.0/include]
+          add: [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+          add: [/trinity/shared/pkg/devel/zlib/1.2.11/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+          add: [/usr/local/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+        collapse include dir [/trinity/shared/pkg/devel/metis/5.1.0/include] ==> [/trinity/shared/pkg/devel/metis/5.1.0/include]
+        collapse include dir [/trinity/shared/pkg/analysis/petsc/3.22.2/include] ==> [/trinity/shared/pkg/analysis/petsc/3.22.2/include]
+        collapse include dir [/trinity/shared/pkg/devel/valgrind/3.14.0/include] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/include]
+        collapse include dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include] ==> [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+        collapse include dir [/trinity/shared/pkg/devel/zlib/1.2.11/include] ==> [/trinity/shared/pkg/devel/zlib/1.2.11/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/include] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include;/trinity/shared/pkg/devel/metis/5.1.0/include;/trinity/shared/pkg/analysis/petsc/3.22.2/include;/trinity/shared/pkg/devel/valgrind/3.14.0/include;/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include;/trinity/shared/pkg/devel/zlib/1.2.11/include;/trinity/shared/pkg/compiler/gcc/12.2.0/include;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include;/usr/local/include;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a]
+        ignore line: []
+        ignore line: [Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d10a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3d10a.dir/build.make CMakeFiles/cmTC_3d10a.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-4wbv1a']
+        ignore line: [Building C object CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc   -v -o CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o -c /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d10a.dir/']
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/cc1 -quiet -v /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3d10a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cco8ZL0f.s]
+        ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/metis/5.1.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/analysis/petsc/3.22.2/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+        ignore line: [ /trinity/shared/pkg/devel/metis/5.1.0/include]
+        ignore line: [ /trinity/shared/pkg/analysis/petsc/3.22.2/include]
+        ignore line: [ /trinity/shared/pkg/devel/valgrind/3.14.0/include]
+        ignore line: [ /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+        ignore line: [ /trinity/shared/pkg/devel/zlib/1.2.11/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [Compiler executable checksum: 9922a690e13d8344b0eb5552ba48d45d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d10a.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o /tmp/cco8ZL0f.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+        ignore line: [COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_3d10a]
+        ignore line: [/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d10a.dir/link.txt --verbose=1]
+        ignore line: [/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -v CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o -o cmTC_3d10a ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d10a' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3d10a.']
+        link line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXxp6pl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3d10a /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccXxp6pl.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3d10a] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o] ==> obj [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> dir [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+          arg [-L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+          arg [-L/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+          arg [-L/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> dir [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+          arg [-L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+          arg [-L/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+          arg [-L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib] ==> dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..]
+          arg [CMakeFiles/cmTC_3d10a.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o] ==> obj [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+        collapse library dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+        collapse library dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+        collapse library dir [/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+        collapse library dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+        collapse library dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+        collapse library dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib] ==> [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12;/lib64;/usr/lib64;/trinity/shared/pkg/devel/metis/5.1.0/lib;/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib;/trinity/shared/pkg/devel/valgrind/3.14.0/lib;/trinity/shared/pkg/compiler/gcc/12.2.0/lib;/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:11 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c0470/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0470.dir/build.make CMakeFiles/cmTC_c0470.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS'
+        Building CXX object CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc   -v -o CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o -c /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c0470.dir/'
+         /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/cc1plus -quiet -v -D_GNU_SOURCE /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c0470.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccCVeP7t.s
+        GNU C++17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+        ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /trinity/shared/pkg/devel/metis/5.1.0/include
+         /trinity/shared/pkg/analysis/petsc/3.22.2/include
+         /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include
+         /trinity/shared/pkg/devel/valgrind/3.14.0/include
+         /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include
+         /trinity/shared/pkg/devel/zlib/1.2.11/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/x86_64-pc-linux-gnu
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/backward
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include
+         /usr/local/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        Compiler executable checksum: 23dd51f2a175fb40e488ba7960060dde
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c0470.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccCVeP7t.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+        COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c0470
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0470.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -v CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c0470 
+        Using built-in specs.
+        COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (GCC) 
+        COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c0470' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c0470.'
+         /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX73iPy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c0470 /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c0470' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c0470.'
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/trinity/shared/pkg/devel/metis/5.1.0/include]
+          add: [/trinity/shared/pkg/analysis/petsc/3.22.2/include]
+          add: [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+          add: [/trinity/shared/pkg/devel/valgrind/3.14.0/include]
+          add: [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+          add: [/trinity/shared/pkg/devel/zlib/1.2.11/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/x86_64-pc-linux-gnu]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/backward]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+          add: [/usr/local/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/trinity/shared/pkg/devel/metis/5.1.0/include] ==> [/trinity/shared/pkg/devel/metis/5.1.0/include]
+        collapse include dir [/trinity/shared/pkg/analysis/petsc/3.22.2/include] ==> [/trinity/shared/pkg/analysis/petsc/3.22.2/include]
+        collapse include dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+        collapse include dir [/trinity/shared/pkg/devel/valgrind/3.14.0/include] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/include]
+        collapse include dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include] ==> [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+        collapse include dir [/trinity/shared/pkg/devel/zlib/1.2.11/include] ==> [/trinity/shared/pkg/devel/zlib/1.2.11/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/include] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/include/c++/12]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/x86_64-pc-linux-gnu] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/include/c++/12/x86_64-pc-linux-gnu]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/backward] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/include/c++/12/backward]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/trinity/shared/pkg/devel/metis/5.1.0/include;/trinity/shared/pkg/analysis/petsc/3.22.2/include;/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include;/trinity/shared/pkg/devel/valgrind/3.14.0/include;/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include;/trinity/shared/pkg/devel/zlib/1.2.11/include;/trinity/shared/pkg/compiler/gcc/12.2.0/include;/trinity/shared/pkg/compiler/gcc/12.2.0/include/c++/12;/trinity/shared/pkg/compiler/gcc/12.2.0/include/c++/12/x86_64-pc-linux-gnu;/trinity/shared/pkg/compiler/gcc/12.2.0/include/c++/12/backward;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include;/usr/local/include;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:11 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS]
+        ignore line: []
+        ignore line: [Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c0470/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0470.dir/build.make CMakeFiles/cmTC_c0470.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-aQXYyS']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc   -v -o CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o -c /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c0470.dir/']
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/cc1plus -quiet -v -D_GNU_SOURCE /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c0470.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccCVeP7t.s]
+        ignore line: [GNU C++17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /trinity/shared/pkg/devel/metis/5.1.0/include]
+        ignore line: [ /trinity/shared/pkg/analysis/petsc/3.22.2/include]
+        ignore line: [ /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+        ignore line: [ /trinity/shared/pkg/devel/valgrind/3.14.0/include]
+        ignore line: [ /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+        ignore line: [ /trinity/shared/pkg/devel/zlib/1.2.11/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/x86_64-pc-linux-gnu]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../include/c++/12/backward]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [Compiler executable checksum: 23dd51f2a175fb40e488ba7960060dde]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c0470.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccCVeP7t.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+        ignore line: [COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c0470]
+        ignore line: [/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0470.dir/link.txt --verbose=1]
+        ignore line: [/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -v CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c0470 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c0470' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c0470.']
+        link line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX73iPy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c0470 /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccX73iPy.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c0470] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o] ==> obj [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> dir [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+          arg [-L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+          arg [-L/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+          arg [-L/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> dir [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+          arg [-L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+          arg [-L/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+          arg [-L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib] ==> dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..]
+          arg [CMakeFiles/cmTC_c0470.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o] ==> obj [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+        collapse library dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+        collapse library dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+        collapse library dir [/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+        collapse library dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+        collapse library dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+        collapse library dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib] ==> [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12;/lib64;/usr/lib64;/trinity/shared/pkg/devel/metis/5.1.0/lib;/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib;/trinity/shared/pkg/devel/valgrind/3.14.0/lib;/trinity/shared/pkg/compiler/gcc/12.2.0/lib;/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineFortranCompiler.cmake:179 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:14 (enable_language)"
+    message: |
+      Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+      Compiler: /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran 
+      Build flags: 
+      Id flags: -v 
+      
+      The output was:
+      0
+      Driving: /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -v CMakeFortranCompilerId.F -l gfortran -l m -shared-libgcc
+      Using built-in specs.
+      COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran
+      COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper
+      Target: x86_64-pc-linux-gnu
+      Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+      Thread model: posix
+      Supported LTO compression algorithms: zlib
+      gcc version 12.2.0 (GCC) 
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'a-'
+       /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccwKCrxG.f90 -quiet -v CMakeFortranCompilerId.F -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -mtune=generic -march=x86-64 -version -fintrinsic-modules-path /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude -o /tmp/ccStpiAo.s
+      GNU Fortran (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+      	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+      
+      GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+      ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+      ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"
+      ignoring duplicate directory "/trinity/shared/pkg/devel/metis/5.1.0/include"
+        as it is a non-system directory that duplicates a system directory
+      ignoring duplicate directory "/trinity/shared/pkg/analysis/petsc/3.22.2/include"
+        as it is a non-system directory that duplicates a system directory
+      ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"
+        as it is a non-system directory that duplicates a system directory
+      ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"
+        as it is a non-system directory that duplicates a system directory
+      ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"
+        as it is a non-system directory that duplicates a system directory
+      ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+        as it is a non-system directory that duplicates a system directory
+      #include "..." search starts here:
+      #include <...> search starts here:
+       /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude
+       /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include
+       /trinity/shared/pkg/devel/metis/5.1.0/include
+       /trinity/shared/pkg/analysis/petsc/3.22.2/include
+       /trinity/shared/pkg/devel/valgrind/3.14.0/include
+       /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include
+       /trinity/shared/pkg/devel/zlib/1.2.11/include
+       /trinity/shared/pkg/compiler/gcc/12.2.0/include
+       /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include
+       /usr/local/include
+       /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed
+       /usr/include
+      End of search list.
+      GNU Fortran2008 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+      	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+      
+      GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'a-'
+       as -v --64 -o /tmp/ccSM96L6.o /tmp/ccStpiAo.s
+      GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+      Reading specs from /trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/libgfortran.spec
+      rename spec lib to liborig
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'a-'
+      COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+      LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'a.'
+       /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf6JjZO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. /tmp/ccSM96L6.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'a.'
+      
+      
+      Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+      
+      The Fortran compiler identification is GNU, found in:
+        /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/3.26.1/CompilerIdFortran/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (enable_language)"
+    checks:
+      - "Detecting Fortran compiler ABI info"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_Fortran_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08155/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08155.dir/build.make CMakeFiles/cmTC_08155.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A'
+        Building Fortran object CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran   -v -c /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o
+        Using built-in specs.
+        COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_08155.dir/'
+         /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/f951 /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccxGok0Z.f90 -quiet -v /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpdir CMakeFiles/cmTC_08155.dir/ -dumpbase CMakeFortranCompilerABI.F90.F90 -dumpbase-ext .F90 -mtune=generic -march=x86-64 -version -fintrinsic-modules-path /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude -o /tmp/ccM9ugCI.s
+        GNU Fortran (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+        ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/trinity/shared/pkg/devel/metis/5.1.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/analysis/petsc/3.22.2/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude
+         /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include
+         /trinity/shared/pkg/devel/metis/5.1.0/include
+         /trinity/shared/pkg/analysis/petsc/3.22.2/include
+         /trinity/shared/pkg/devel/valgrind/3.14.0/include
+         /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include
+         /trinity/shared/pkg/devel/zlib/1.2.11/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include
+         /usr/local/include
+         /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed
+         /usr/include
+        End of search list.
+        GNU Fortran2008 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_08155.dir/'
+         as -v --64 -o CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o /tmp/ccM9ugCI.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+        COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.'
+        Linking Fortran executable cmTC_08155
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08155.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran  -v CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o -o cmTC_08155 
+        Driving: /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -v CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o -o cmTC_08155 -l gfortran -l m -shared-libgcc
+        Using built-in specs.
+        COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran
+        COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.2.0 (GCC) 
+        Reading specs from /trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/libgfortran.spec
+        rename spec lib to liborig
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08155' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_08155-'
+        COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08155' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_08155.'
+         /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyhY8oU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_08155 /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08155' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_08155.'
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (enable_language)"
+    message: |
+      Parsed Fortran implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude]
+          add: [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+          add: [/trinity/shared/pkg/devel/metis/5.1.0/include]
+          add: [/trinity/shared/pkg/analysis/petsc/3.22.2/include]
+          add: [/trinity/shared/pkg/devel/valgrind/3.14.0/include]
+          add: [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+          add: [/trinity/shared/pkg/devel/zlib/1.2.11/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+          add: [/usr/local/include]
+          add: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude]
+        collapse include dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+        collapse include dir [/trinity/shared/pkg/devel/metis/5.1.0/include] ==> [/trinity/shared/pkg/devel/metis/5.1.0/include]
+        collapse include dir [/trinity/shared/pkg/analysis/petsc/3.22.2/include] ==> [/trinity/shared/pkg/analysis/petsc/3.22.2/include]
+        collapse include dir [/trinity/shared/pkg/devel/valgrind/3.14.0/include] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/include]
+        collapse include dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include] ==> [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+        collapse include dir [/trinity/shared/pkg/devel/zlib/1.2.11/include] ==> [/trinity/shared/pkg/devel/zlib/1.2.11/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/include] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude;/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include;/trinity/shared/pkg/devel/metis/5.1.0/include;/trinity/shared/pkg/analysis/petsc/3.22.2/include;/trinity/shared/pkg/devel/valgrind/3.14.0/include;/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include;/trinity/shared/pkg/devel/zlib/1.2.11/include;/trinity/shared/pkg/compiler/gcc/12.2.0/include;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include;/usr/local/include;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (enable_language)"
+    message: |
+      Parsed Fortran implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A]
+        ignore line: []
+        ignore line: [Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08155/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08155.dir/build.make CMakeFiles/cmTC_08155.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-58RZ0A']
+        ignore line: [Building Fortran object CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran   -v -c /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_08155.dir/']
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/f951 /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccxGok0Z.f90 -quiet -v /trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/CMakeFortranCompilerABI.F90 -quiet -dumpdir CMakeFiles/cmTC_08155.dir/ -dumpbase CMakeFortranCompilerABI.F90.F90 -dumpbase-ext .F90 -mtune=generic -march=x86-64 -version -fintrinsic-modules-path /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude -o /tmp/ccM9ugCI.s]
+        ignore line: [GNU Fortran (GCC) version 12.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/metis/5.1.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/analysis/petsc/3.22.2/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/valgrind/3.14.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/devel/zlib/1.2.11/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/trinity/shared/pkg/compiler/gcc/12.2.0/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/finclude]
+        ignore line: [ /trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/include]
+        ignore line: [ /trinity/shared/pkg/devel/metis/5.1.0/include]
+        ignore line: [ /trinity/shared/pkg/analysis/petsc/3.22.2/include]
+        ignore line: [ /trinity/shared/pkg/devel/valgrind/3.14.0/include]
+        ignore line: [ /trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/include]
+        ignore line: [ /trinity/shared/pkg/devel/zlib/1.2.11/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU Fortran2008 (GCC) version 12.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_08155.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o /tmp/ccM9ugCI.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+        ignore line: [COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.']
+        ignore line: [Linking Fortran executable cmTC_08155]
+        ignore line: [/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08155.dir/link.txt --verbose=1]
+        ignore line: [/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran  -v CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o -o cmTC_08155 ]
+        ignore line: [Driving: /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -v CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o -o cmTC_08155 -l gfortran -l m -shared-libgcc]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran]
+        ignore line: [COLLECT_LTO_WRAPPER=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-bootstrap --prefix=/trinity/shared/pkg/compiler/gcc/12.2.0 --enable-build-with-cxx --disable-multilib --oldincludedir=/usr/include --with-gcc-major-version-only --enable-shared --enable-checking --with-system-zlib --enable-gnu-indirect-function --enable-gnu-unique-object --enable-lto --enable-threads]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.2.0 (GCC) ]
+        ignore line: [Reading specs from /trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/libgfortran.spec]
+        ignore line: [rename spec lib to liborig]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08155' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_08155-']
+        ignore line: [COMPILER_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/:/trinity/shared/pkg/devel/metis/5.1.0/lib/:/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib/:/trinity/shared/pkg/devel/valgrind/3.14.0/lib/:/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib/:/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08155' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_08155.']
+        link line: [ /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2 -plugin /trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so -plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyhY8oU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_08155 /lib/../lib64/crt1.o /lib/../lib64/crti.o /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64 -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib -L/trinity/shared/pkg/devel/metis/5.1.0/lib -L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib -L/trinity/shared/pkg/devel/valgrind/3.14.0/lib -L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib -L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../.. CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o /lib/../lib64/crtn.o]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/trinity/shared/pkg/compiler/gcc/12.2.0/libexec/gcc/x86_64-pc-linux-gnu/12/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccyhY8oU.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_08155] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o] ==> obj [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> dir [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+          arg [-L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+          arg [-L/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib64] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+          arg [-L/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> dir [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+          arg [-L/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+          arg [-L/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+          arg [-L/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib] ==> dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+          arg [-L/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..] ==> dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..]
+          arg [CMakeFiles/cmTC_08155.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
+          arg [-lgfortran] ==> lib [gfortran]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lquadmath] ==> lib [quadmath]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o] ==> obj [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64/../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../../../lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+        collapse library dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+        collapse library dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+        collapse library dir [/trinity/shared/pkg/devel/metis/5.1.0/lib] ==> [/trinity/shared/pkg/devel/metis/5.1.0/lib]
+        collapse library dir [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib] ==> [/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib]
+        collapse library dir [/trinity/shared/pkg/devel/valgrind/3.14.0/lib] ==> [/trinity/shared/pkg/devel/valgrind/3.14.0/lib]
+        collapse library dir [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib] ==> [/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+        collapse library dir [/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/../../..] ==> [/trinity/shared/pkg/compiler/gcc/12.2.0/lib]
+        implicit libs: [gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtbegin.o;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/trinity/shared/pkg/compiler/gcc/12.2.0/lib64;/trinity/shared/pkg/compiler/gcc/12.2.0/lib/gcc/x86_64-pc-linux-gnu/12;/lib64;/usr/lib64;/trinity/shared/pkg/devel/metis/5.1.0/lib;/trinity/shared/pkg/numlib/fftw/3.3.10/gcc/12.2.0/openmpi/4.1.5-ucx/lib;/trinity/shared/pkg/devel/valgrind/3.14.0/lib;/trinity/shared/pkg/compiler/gcc/12.2.0/lib;/trinity/shared/pkg/filelib/hdf5/1.14.0/gcc/12.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-k1yIp3"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-k1yIp3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-k1yIp3
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f913d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f913d.dir/build.make CMakeFiles/cmTC_f913d.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-k1yIp3'
+        Building C object CMakeFiles/cmTC_f913d.dir/test_mpi.c.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -isystem /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -pthread -o CMakeFiles/cmTC_f913d.dir/test_mpi.c.o -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-k1yIp3/test_mpi.c
+        Linking C executable cmTC_f913d
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f913d.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_f913d.dir/test_mpi.c.o -o cmTC_f913d  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-k1yIp3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-t0d9ox"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-t0d9ox"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-t0d9ox
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d9400/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9400.dir/build.make CMakeFiles/cmTC_d9400.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-t0d9ox'
+        Building CXX object CMakeFiles/cmTC_d9400.dir/test_mpi.cpp.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -isystem /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -pthread -o CMakeFiles/cmTC_d9400.dir/test_mpi.cpp.o -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-t0d9ox/test_mpi.cpp
+        Linking CXX executable cmTC_d9400
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9400.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_d9400.dir/test_mpi.cpp.o -o cmTC_d9400  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-t0d9ox'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-MspG4h"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-MspG4h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-MspG4h
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2478/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d2478.dir/build.make CMakeFiles/cmTC_d2478.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-MspG4h'
+        Building CXX object CMakeFiles/cmTC_d2478.dir/test_mpi.cpp.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc  -isystem /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -pthread -o CMakeFiles/cmTC_d2478.dir/test_mpi.cpp.o -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-MspG4h/test_mpi.cpp
+        Linking CXX executable cmTC_d2478
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2478.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gcc -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_d2478.dir/test_mpi.cpp.o -o cmTC_d2478  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-MspG4h'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1297 (_MPI_try_staged_settings)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test test_mpi for Fortran in mode F77_HEADER"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-6jALc8"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-6jALc8"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_Fortran_test_mpi_F77_HEADER"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-6jALc8
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f06f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f06f3.dir/build.make CMakeFiles/cmTC_f06f3.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-6jALc8'
+        Building Fortran object CMakeFiles/cmTC_f06f3.dir/test_mpi.f90.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran  -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -pthread -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-6jALc8/test_mpi.f90 -o CMakeFiles/cmTC_f06f3.dir/test_mpi.f90.o
+        Linking Fortran executable cmTC_f06f3
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f06f3.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_f06f3.dir/test_mpi.f90.o -o cmTC_f06f3  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempif08.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempi_ignore_tkr.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_mpifh.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-6jALc8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1298 (_MPI_try_staged_settings)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test test_mpi for Fortran in mode F90_MODULE"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-w2JadV"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-w2JadV"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_Fortran_test_mpi_F90_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-w2JadV
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_404eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_404eb.dir/build.make CMakeFiles/cmTC_404eb.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-w2JadV'
+        Building Fortran object CMakeFiles/cmTC_404eb.dir/test_mpi.f90.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran  -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -pthread -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-w2JadV/test_mpi.f90 -o CMakeFiles/cmTC_404eb.dir/test_mpi.f90.o
+        Linking Fortran executable cmTC_404eb
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_404eb.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_404eb.dir/test_mpi.f90.o -o cmTC_404eb  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempif08.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempi_ignore_tkr.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_mpifh.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-w2JadV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1299 (_MPI_try_staged_settings)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test test_mpi for Fortran in mode F08_MODULE"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-nUrK1I"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-nUrK1I"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_Fortran_test_mpi_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-nUrK1I
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa162/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fa162.dir/build.make CMakeFiles/cmTC_fa162.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-nUrK1I'
+        Building Fortran object CMakeFiles/cmTC_fa162.dir/test_mpi.f90.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran  -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -pthread -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-nUrK1I/test_mpi.f90 -o CMakeFiles/cmTC_fa162.dir/test_mpi.f90.o
+        Linking Fortran executable cmTC_fa162
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa162.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_fa162.dir/test_mpi.f90.o -o cmTC_fa162  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempif08.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempi_ignore_tkr.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_mpifh.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-nUrK1I'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/trinity/shared/pkg/devel/cmake/3.26.1/share/cmake-3.26/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:17 (find_package)"
+    description: "The MPI test mpiver for Fortran in mode F08_MODULE"
+    directories:
+      source: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-kIIKMx"
+      binary: "/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-kIIKMx"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_Fortran_mpiver_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-kIIKMx
+        
+        Run Build Command(s):/trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c6076/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c6076.dir/build.make CMakeFiles/cmTC_c6076.dir/build
+        gmake[1]: Entering directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-kIIKMx'
+        Building Fortran object CMakeFiles/cmTC_c6076.dir/mpiver.f90.o
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran  -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/include -I/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -pthread -c /home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-kIIKMx/mpiver.f90 -o CMakeFiles/cmTC_c6076.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_c6076
+        /trinity/shared/pkg/devel/cmake/3.26.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6076.dir/link.txt --verbose=1
+        /trinity/shared/pkg/compiler/gcc/12.2.0/bin/gfortran -Wl,-rpath -Wl,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib -Wl,--enable-new-dtags -pthread CMakeFiles/cmTC_c6076.dir/mpiver.f90.o -o cmTC_c6076  -Wl,-rpath,/trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempif08.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_usempi_ignore_tkr.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi_mpifh.so /trinity/shared/pkg/mpi/openmpi/4.1.6/gcc/12.2.0/lib/libmpi.so 
+        gmake[1]: Leaving directory `/home/botez18/APPLICATIONS_SFEMaNS/PREC_ROT_AX/BUILD/CMakeFiles/CMakeScratch/TryCompile-kIIKMx'
+        
+      exitCode: 0
+...
