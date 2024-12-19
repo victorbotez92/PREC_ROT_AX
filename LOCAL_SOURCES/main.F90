@@ -8,6 +8,9 @@ PROGRAM mhd_prog
   USE fourier_to_real_for_vtu
   USE user_data
   USE post_processing_debug
+! VB 18/12/2024
+  USE lecture_ecriture_time_average_info_VB
+! VB 18/12/2024
   USE verbose
 #include "petsc/finclude/petsc.h"
   USE petsc
@@ -48,6 +51,8 @@ PROGRAM mhd_prog
   !===udif===========================
   REAL(KIND=8), POINTER, DIMENSION(:,:,:)         :: udif ! for antisym multiplier
 !
+
+
     !TEST DCQ
     !===TEST if you want to visualize mu
     INTEGER :: i, bloc_size, m_max_pad, nb_procs, l
@@ -65,6 +70,7 @@ PROGRAM mhd_prog
     REAL(KIND = 8) :: dummy_time
     LOGICAL, SAVE :: once = .TRUE., time_average_counter_read = .FALSE.
     INTEGER, SAVE :: time_average_counter = 0
+
     REAL(KIND = 8), SAVE :: time_average_kenergy = 0.d0, urms = 0.d0
     REAL(KIND = 8), SAVE :: delta_t = 0.d0, avg_delta_t = 0.d0, avg_delta_t_sqr = 0.d0
     REAL(KIND = 8), SAVE :: poloidal = 0.d0, toroidal = 0.d0
@@ -89,6 +95,8 @@ PROGRAM mhd_prog
   !===User reads his/her own data=================================================
   CALL read_user_data('data')
 
+
+
   !===Initialize SFEMANS (mandatory)==============================================
   CALL initial(vv_mesh, pp_mesh, H_mesh, phi_mesh, temp_mesh, conc_mesh,&
        interface_H_phi, interface_H_mu, list_mode, &
@@ -107,6 +115,18 @@ PROGRAM mhd_prog
 !TEST VB 02/12/2024 (RUCHE)
 !       der_un, visc_LES, visc_LES_level)
 !TEST VB 02/12/2024
+
+!VB 19/12/2024
+
+
+  IF ((user%time_avg_freq_restart .LE. inputs%nb_iteration) .AND. (MOD(inputs%nb_iteration, user%time_avg_freq_restart) .NE. 0&
+   .OR. (MOD(inputs%nb_iteration,inputs%freq_en) .NE. 0))) THEN
+    CALL error_petsc('Problem in read-data: you wanted to output suite_VKS. Make sure to have &
+    nb_iteration multiple of both time_avg_freq_restart and freq_energies (otherwise the mean is badly computed)')
+  END IF
+
+!VB 19/12/2024
+
 
 !!$  !===Nonlinear restart========================================================
 !!$  IF(user%if_nonlin) THEN
@@ -222,6 +242,14 @@ PROGRAM mhd_prog
      IF (it>1) tploc_max = tploc_max + tploc
 
   ENDDO
+
+! VB 19/12/2024
+
+  IF (rank == 0) THEN
+    CALL time_average_file()
+  END IF
+
+! VB 19/12/2024
 
   !===Timing======================================================================
   tps = user_time() - tps
@@ -432,6 +460,7 @@ CONTAINS
                     OPEN(UNIT = 12, FILE = 'time_average_info', FORM = 'formatted', STATUS = 'unknown')
                     CALL read_until(12, '===Time average counter')
                     READ(12, *) time_average_counter
+
                     time_average_counter_read = .TRUE.
                     CALL read_until(12, '===Average Kinetic Energy')
                     READ(12, *) time_average_kenergy
