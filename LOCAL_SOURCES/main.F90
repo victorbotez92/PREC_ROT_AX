@@ -96,7 +96,6 @@ PROGRAM mhd_prog
   CALL read_user_data('data')
 
 
-
   !===Initialize SFEMANS (mandatory)==============================================
   CALL initial(vv_mesh, pp_mesh, H_mesh, phi_mesh, temp_mesh, conc_mesh,&
        interface_H_phi, interface_H_mu, list_mode, &
@@ -222,7 +221,11 @@ PROGRAM mhd_prog
                 time_avg_u_square = time_avg_u_square * time_average_counter
                 time_average_p = time_average_p * time_average_counter
             END IF
-            IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mhd') THEN
+            ! VB 20/12/2024
+            IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mhd' .OR. inputs%type_pb=='mxx') THEN
+        !    IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mhd') THEN
+            ! VB 20/12/2024
+
                 !Get avg
                 time_average_H = time_average_H / time_average_counter
                 time_average_B = time_average_B / time_average_counter
@@ -245,7 +248,7 @@ PROGRAM mhd_prog
 
 ! VB 19/12/2024
 
-  IF (rank == 0) THEN
+  IF (rank == 0 .AND. (inputs%type_pb=="mhd" .OR. inputs%type_pb=="nst")) THEN
     CALL time_average_file()
   END IF
 
@@ -419,7 +422,10 @@ CONTAINS
        IF (inputs%type_pb=='nst' .OR. inputs%type_pb=='mhd' .OR. inputs%type_pb=='fhd' &
             .OR. inputs%type_pb=='mhs') THEN
           norm = norm_SF(comm_one_d_ns, 'L2', vv_mesh, list_mode, un)
-       ELSE IF (inputs%type_pb=='mxw') THEN
+       ! VB 20/12/2024
+       ELSE IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mxx') THEN
+       !ELSE IF (inputs%type_pb=='mxw') THEN
+       ! VB 20/12/2024
           norm = norm_SF(comm_one_d, 'L2', H_mesh, list_mode, Hn)
        END IF
        IF (norm>1.d8.OR.isnan(norm)) THEN
@@ -1287,8 +1293,12 @@ CONTAINS
           !CALL potential_on_axis(time, H_mesh, conc_mesh, comm_one_d, comm_one_d_conc,list_mode, Hn, concentration)
        END IF ! end if_concentration
 
-       IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mhd' &
+! VB 20/12/2024
+   !    IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mhd' &
+    !        .OR. inputs%type_pb=='fhd' .OR. inputs%type_pb=='mhs' ) THEN
+       IF (inputs%type_pb=='mxw' .OR. inputs%type_pb=='mhd' .OR. inputs%type_pb=='mxx' &
             .OR. inputs%type_pb=='fhd' .OR. inputs%type_pb=='mhs' ) THEN
+! VB 20/12/2024
           err = norm_SF(comm_one_d, 'div', H_mesh, list_mode, Hn)
           norm = norm_SF(comm_one_d, 'H1', H_mesh, list_mode, Hn)
           IF (rank == 0) THEN
