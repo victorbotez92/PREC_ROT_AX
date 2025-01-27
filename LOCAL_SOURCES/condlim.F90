@@ -436,9 +436,9 @@ CONTAINS
               Hn1(:,k,i) = ampl
             END IF
           ENDIF
-          IF (k<3 .AND. list_mode(i) == 0) THEN
-            phin1(:,k,i) = ampl * (0.1 - 1.0/SQRT(phi_mesh%rr(1,:)**2 + phi_mesh%rr(2,:)**2)) !radius of outer shell = 10       
-          ENDIF
+         ! IF (k<3 .AND. list_mode(i) == 0) THEN
+         !   phin1(:,k,i) = ampl * (0.1 - 1.0/SQRT(phi_mesh%rr(1,:)**2 + phi_mesh%rr(2,:)**2)) !radius of outer shell = 10       
+         ! ENDIF
        ENDDO
     ENDDO
 

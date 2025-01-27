@@ -1,15 +1,18 @@
-MODULE lecture_ecriture_time_average_info_VB
+MODULE old_read_write_time_avg_info
   IMPLICIT NONE
-  PUBLIC :: time_average_file
+  PUBLIC :: old_time_average_file
 
 CONTAINS
       
-  SUBROUTINE time_average_file()
+  SUBROUTINE old_time_average_file(time_avg_counter)
 
     IMPLICIT NONE
+! VB 23/01/2024
+    INTEGER,                             INTENT(IN) :: time_avg_counter
+ !   INTEGER :: time_avg_counter
+! VB 23/01/2024
 
-    INTEGER :: time_avg_counter
-    REAL(KIND=8) :: time, avg_kin_ener, URMS, avg_delta, avg_delta_sq
+    REAL(KIND=8) :: time, avg_kin_ener, URMS, avg_delta, avg_delta_sq, time_avg_counter_from_file
   ! REAL(KIND=8) :: avg_torque, avg_torque_top, avg_torque_bot
     REAL(KIND=8) :: real1, real2, real3, real4, real5, real6, real7
 
@@ -22,17 +25,17 @@ CONTAINS
   ! OPEN(unit=14,file='toto3',form='formatted',status='unknown')
 
     !===fort.97
-    READ(12,*) time, time_avg_counter, real1, real2, real3, URMS, &
+    READ(12,*) time, time_avg_counter_from_file, real1, real2, real3, URMS, &
               real4, avg_kin_ener, real5
     CLOSE(12)
 
     !===fort.99
-    READ(13,*) time, time_avg_counter, real1, avg_delta, avg_delta_sq, &
+    READ(13,*) time, time_avg_counter_from_file, real1, avg_delta, avg_delta_sq, &
               real2, real3, real4, real5, real6, real7
     CLOSE(13)
 
   ! !===fort.667
-  ! READ(14,*) time, time_avg_counter, avg_torque, avg_torque_top, avg_torque_bot
+  ! READ(14,*) time, time_avg_counter_from_file, avg_torque, avg_torque_top, avg_torque_bot
   ! CLOSE(14)
 
     !======output
@@ -61,6 +64,6 @@ CONTAINS
     CALL system("\rm toto1")
     CALL system("\rm toto2")
 
-  END SUBROUTINE time_average_file
+  END SUBROUTINE old_time_average_file
 
-END MODULE lecture_ecriture_time_average_info_VB
+END MODULE old_read_write_time_avg_info

@@ -8,9 +8,10 @@ PROGRAM mhd_prog
   USE fourier_to_real_for_vtu
   USE user_data
   USE post_processing_debug
-! VB 18/12/2024
-  USE lecture_ecriture_time_average_info_VB
-! VB 18/12/2024
+! VB 18/12/2024, update 23/01/2025
+!  USE lecture_ecriture_time_average_info_VB
+  USE read_write_time_avg_info
+! VB 18/12/2024, update 23/01/2025
   USE verbose
 #include "petsc/finclude/petsc.h"
   USE petsc
@@ -237,6 +238,11 @@ PROGRAM mhd_prog
                 time_average_H = time_average_H * time_average_counter
                 time_average_B = time_average_B * time_average_counter
             END IF
+            ! VB 19/12/2024, update 23/01/2025
+            !IF (rank == 0 .AND. (inputs%type_pb=="mhd" .OR. inputs%type_pb=="nst")) THEN
+            !    CALL time_average_file(time_average_counter)
+            !END IF
+            ! VB 19/12/2024, update 23/01/2025
         ENDIF
 
         !TEST DCQ
@@ -246,13 +252,7 @@ PROGRAM mhd_prog
 
   ENDDO
 
-! VB 19/12/2024
 
-  IF (rank == 0 .AND. (inputs%type_pb=="mhd" .OR. inputs%type_pb=="nst")) THEN
-    CALL time_average_file()
-  END IF
-
-! VB 19/12/2024
 
   !===Timing======================================================================
   tps = user_time() - tps
@@ -403,7 +403,11 @@ CONTAINS
     104 FORMAT(e22.9, i4, 1500(e22.9, 2x))
     106 FORMAT(A, x, i4, 2x, A, x, e12.5, 2x, A, x, e12.5)
     109 FORMAT(1500(A))
-    110 FORMAT(e22.9, 2x, i4, 1500(e22.9, 2x))
+! update VB 25/01/2025
+!    110 FORMAT(e22.9, 2x, i4, 1500(e22.9, 2x))
+    110 FORMAT(e22.9, 2x, I5, 1500(e22.9, 2x))
+
+! update VB 25/01/2025
 
     !===Check ranks
     IF (vv_mesh%me /=0) THEN
@@ -1156,6 +1160,12 @@ CONTAINS
                             avg_int, & !int (bar{u} DOmega)/int( DOmega)
                             ibar_u_t, ibar_u_r, ibar_u_z, &
                             fluct_mke
+                    IF (MOD(it, user%time_avg_freq_restart) == 0) THEN
+                        CALL time_average_file(time_average_counter, time_average_kenergy / time_average_counter, &
+                        urms / time_average_counter, &
+                        avg_delta_t / time_average_counter,&
+                        avg_delta_t_sqr / time_average_counter)
+                    END IF
 !                   WRITE(667, 110) time, time_average_counter, time_avg_torque / time_average_counter, &
 !                           time_avg_torque_top / time_average_counter, time_avg_torque_bot / time_average_counter
                 END IF
@@ -1738,6 +1748,10 @@ CONTAINS
                opt_mesh_in=H_mesh)
           IF (inputs%nb_dom_phi>0) THEN
              CALL vtu_3d(comm_one_d, phin, 'phi_mesh', 'ScalPot', 'phi', what, opt_it=it_plot)
+!VB 09/01/2025
+             CALL vtu_3d(comm_one_d, phin, 'phi_mesh', 'grad_ScalPot', 'grad_phi', what, opt_it=it_plot, opt_grad_curl='grad')
+!VB 09/01/2025
+
           END IF
 
           IF (inputs%if_plot_2D) THEN
