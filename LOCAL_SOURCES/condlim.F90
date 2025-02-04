@@ -284,6 +284,20 @@ CONTAINS
     INTEGER,                             INTENT(IN)   :: mode
     REAL(KIND=8),                        INTENT(IN)   :: t
     REAL(KIND=8), DIMENSION(H_mesh%np)                :: vv
+! VB 04/02/2025
+    INTEGER                                           :: k
+    REAL(KIND=8)                                      :: r,z
+!============ THIS CONSIDERS THAT FOR THE CYLINDER, ANYTHING BEYOND 0<r<1 and -1<z<1 IS SOLID BODY ROTATION (if it is in H_mesh)
+    DO k=1,SIZE(H_mesh%rr(1,:))
+      r = H_mesh%rr(1,k)
+      z = H_mesh%rr(2,k)
+      IF (r > 1. .OR. z > 1. .OR. z < -1.) THEN
+        IF ((TYPE == 3) .AND. (mode == 0)) THEN
+          vv = r
+        END IF 
+      END IF
+    END DO
+!============ VB 04/02/2025
 
     vv = 0.d0
     RETURN
